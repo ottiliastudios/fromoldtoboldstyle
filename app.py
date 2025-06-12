@@ -28,6 +28,7 @@ st.markdown("""
             display: flex;
             justify-content: center;
             margin-bottom: 1rem;
+        
         }
 
         .external-button {
@@ -43,11 +44,15 @@ st.markdown("""
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
+            font-family: 'Syne', sans-serif;
         }
 
         .external-button a:hover {
             background-color: #333;
         }
+
+        
+        
     </style>
 """, unsafe_allow_html=True)
 
@@ -66,6 +71,8 @@ st.markdown("""
 
 # --- Start Boxed Content ---
 st.markdown('<div class="boxed">', unsafe_allow_html=True)
+
+st.write("Upload a photo of your old piece of jewelry. Our AI estimates the weight and suggests matching new designs.")
 
 # Material-Auswahl
 material = st.selectbox("Select material", ["Silver", "Gold", "Other"])
